@@ -8,15 +8,11 @@ This is a solution to the [Single price grid component challenge on Frontend Men
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
-## Overview
 
 ### The challenge
 
@@ -32,10 +28,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [my solution](https://your-solution-url.com)
-- Live Site URL: [my live utl]([https://your-live-site-url.com](https://singlepricegridcsshtml.netlify.app/))
+- Solution URL: [my code](https://your-solution-url.com)
+- Live Site URL: [my live url](https://singlepricegridcsshtml.netlify.app/)
 
-## My process
 
 ### Built with
 
