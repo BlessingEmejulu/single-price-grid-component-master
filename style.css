@@ -1,0 +1,199 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap");
+
+:root {
+  --CL-cyan: hsl(179, 62%, 43%);
+  --CL-bright-yellow: hsl(71, 73%, 54%);
+  --CL-light-gray: hsl(204, 43%, 93%);
+  --CL-grayish-blue: hsl(218, 22%, 67%);
+
+  --FS-title: clamp(1.1rem, 1rem + 1vw, 1.6rem);
+  --FS-subtitle: clamp(0.6rem, 0.7rem + 1vw, 1.1rem);
+  --FS-normal: clamp(0.6rem, 0.8rem + 1vw, 1.1rem);
+  --FS-description: clamp(0.4rem, 0.55rem + 1vw, 1rem);
+  --FS-details: clamp(0.6rem, 0.6rem + 1vw, 0.9rem);
+}
+
+*,
+*::after,
+*::before,
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  transition: 0.25s;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+  display: grid;
+  place-content: center;
+  grid-template-columns: min(80%, 650px);
+}
+
+
+
+
+main{
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.07);
+}
+/* FIRST CARD */
+.first-card{
+  background-color: white;
+  padding: 1.5rem 2.5rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.first-card h1{
+  font-size: var(--FS-title);
+  color: var(--CL-cyan);
+  margin-bottom: 1.8rem;
+}
+
+.first-card h2{
+  font-size: var(--FS-subtitle);
+  color: var(--CL-bright-yellow);
+}
+
+.first-card p{
+    font-size: var(--FS-description);
+    color: var(--CL-grayish-blue);
+    line-height: 1.5;
+}
+
+.color-card{
+  display: flex;
+}
+
+.second-card{
+  background-color: var(--CL-cyan);
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 0 0 0 10px;
+  box-shadow: inset  0px 0px 15rem rgb(0, 0, 0, 0.08);
+}
+
+  h3{
+    font-size: var(--FS-normal);
+    margin-bottom: 0;
+  }
+
+ .second-card h4{
+  font-size: var(--FS-description);
+  margin-block: 0.5rem;
+  color: var(--CL-light-gray) !important;
+    }
+
+    h4 span{
+      margin-block: 0.5rem;
+      font-size: var(--FS-title) !important; 
+      font-weight: 700;
+    }
+    .second-card p{
+      margin-top: 0;
+      font-size: var(--FS-details);
+      color: var(--CL-light-gray) !important;
+    }
+    
+  button{
+  background-color: var(--CL-bright-yellow);
+  padding-block: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.second-card button:hover{
+  color: black;
+  background-color: var(--CL-light-gray);
+}
+
+  
+.third-card{
+  background-color: var(--CL-cyan);
+  border-radius: 0 0 10px 0;
+  color: white;
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.third-card h5{
+  font-size: var(--FS-normal);
+  margin-bottom: 0;
+}
+
+.third-card ul{
+  padding-left: 0;
+  list-style: none;
+}
+
+.third-card li{
+  font-size: var(--FS-details);
+  margin-block: 0.15rem;
+}
+
+
+.second-card, .third-card{
+  width: 50%;
+  padding: 1rem 2.5rem;
+  color: var(--CL-light-gray);
+}
+
+h4, li{
+  font-weight: 200;
+}
+
+
+/* MOBLIE VIEW*/
+
+
+@media (max-width: 1000px){
+
+  body{
+    grid-template-columns: 80%;
+    padding-block: 2rem;
+    height: 100%;
+  }
+  .first-card p{
+    line-height: 2;
+  }
+
+  .first-card h1{
+    margin-bottom: 1.5rem;
+  }
+
+  .whole-card{
+    grid-template-rows: auto auto;
+  }
+
+  .first-card{
+    padding: 0.5rem 1.5rem !important;
+  }
+
+  .color-card{
+    flex-direction: column;
+  }
+
+  .second-card, .third-card{
+    width: 100% !important;
+    height: 50%;
+    padding: 0.5rem 1.5rem !important;
+  }
+
+  .second-card{
+    border-radius: 0  0 0 0;
+    justify-content: space-between;
+  }
+
+  .third-card{
+    border-radius: 0 0 10px 10px;
+  }
+}
