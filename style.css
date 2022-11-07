@@ -155,7 +155,7 @@ h4, li{
 /* MOBLIE VIEW*/
 
 
-@media (max-width: 1000px){
+@media only screen and (max-width: 600px) {
 
   body{
     grid-template-columns: 80%;
